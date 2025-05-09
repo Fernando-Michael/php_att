@@ -1,5 +1,4 @@
 
-<?php include '../../header.php'; ?>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -13,5 +12,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Idade: $idade<br>";
 }
 ?>
-
-<?php include '../../footer.php'; ?>

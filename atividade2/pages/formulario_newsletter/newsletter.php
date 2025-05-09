@@ -1,4 +1,4 @@
-<?php include '../../header.php'; ?>
+
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -8,4 +8,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include '../../footer.php'; ?>
+

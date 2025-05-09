@@ -1,4 +1,4 @@
-<?php include '../../header.php'; ?>
+
 
 <?php
 $usuarioValido = "admin";
@@ -16,4 +16,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include '../../footer.php'; ?>
+

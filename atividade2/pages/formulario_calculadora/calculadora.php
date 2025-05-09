@@ -1,32 +1,29 @@
-<?php include '../../header.php'; ?>
-
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $numero1 = $_POST['numero1'];
+    $numero2 = $_POST['numero2'];
     $operacao = $_POST['operacao'];
 
     switch ($operacao) {
         case 'soma':
-            $resultado = $num1 + $num2;
+            $resultado = $numero1 + $numero2;
             break;
         case 'subtracao':
-            $resultado = $num1 - $num2;
+            $resultado = $numero1 - $numero2;
             break;
         case 'multiplicacao':
-            $resultado = $num1 * $num2;
+            $resultado = $numero1 * $numero2;
             break;
         case 'divisao':
-            if ($num2 != 0) {
-                $resultado = $num1 / $num2;
+            if ($numero2 != 0) {
+                $resultado = $numero1 / $numero2;
             } else {
                 $resultado = "Erro: divisão por zero.";
             }
             break;
+        default:
+            $resultado = "Erro: operação inválida.";
     }
 
-    echo "Resultado: $resultado";
+    echo $resultado;
 }
-?>
-
-<?php include '../../footer.php'; ?>

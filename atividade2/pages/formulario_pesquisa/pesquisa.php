@@ -1,10 +1,6 @@
-<?php include '../../header.php'; ?>
-
 <?php
-if (isset($_GET['termo'])) {
-    $termo = $_GET['termo'];
+if (isset($_POST['termo'])) {
+    $termo = $_POST['termo'];
     echo "Você pesquisou por: $termo";
 }
 ?>
-
-<?php include '../../footer.php'; ?>
