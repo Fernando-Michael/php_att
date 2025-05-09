@@ -7,12 +7,12 @@
 <body>
 <form id="formulario_quiz" action="pages/formulario_quiz/quiz.php" method="POST">
     <label for="pergunta1">Qual a capital do Brasil?</label><br>
-    <input type="radio" name="pergunta1" value="Brasília"> Brasília<br>
+    <input type="radio" name="pergunta1" value="Brasília" required> Brasília<br>
     <input type="radio" name="pergunta1" value="São Paulo"> São Paulo<br>
     <input type="radio" name="pergunta1" value="Minas Gerais"> Minas Gerais<br><br>
 
     <label for="pergunta2">Quanto é 5 + 3?</label><br>
-    <input type="radio" name="pergunta2" value="6"> 6<br>
+    <input type="radio" name="pergunta2" value="6" required> 6<br>
     <input type="radio" name="pergunta2" value="7"> 7<br>
     <input type="radio" name="pergunta2" value="8"> 8<br><br>
 
@@ -45,11 +45,5 @@
         });
     });
 </script>
-
-
-
-
-
-
 </body>
 </html>
